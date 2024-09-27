@@ -12,16 +12,16 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: https://github.com/redhat-na-ssa/redhat-developer-hub-gitops-bootstrap.git
+    repoURL: https://github.com/tgubeli/redhat-developer-hub-gitops-bootstrap.git
     targetRevision: HEAD
     path: argo-applications
     helm:
       values: | 
         gitRepo: 
-          URL: https://github.com/redhat-na-ssa/redhat-developer-hub-gitops-bootstrap.git
+          URL: https://github.com/tgubeli/redhat-developer-hub-gitops-bootstrap.git
           targetRevision: HEAD
         git: 
-          organization: redhat-na-ssa
+          organization: DevHubDemo
     directory:
       recurse: false
   # Destination cluster and namespace to deploy the application
